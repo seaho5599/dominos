@@ -185,7 +185,7 @@ body {
 .gnb>li {
   position: relative;
   display: inline-block;
-
+  padding: 0 58px;
 }
 
 .gnb>li>a {
@@ -194,9 +194,10 @@ body {
   font-size: 18px;
   color: #111;
   line-height: 54px;
-  padding: 0 58px;
+
 }
-.gnb>li>a::after{
+
+.gnb>li>a::after {
   content: '';
   position: absolute;
   bottom: -3px;
@@ -207,16 +208,18 @@ body {
   transform: translateX(-50%) scaleX(0);
   transition: all 0.3s;
 }
-.gnb>li>a:hover::after{
+
+.gnb>li>a:hover::after {
   width: 100%;
   transform: translateX(-50%) scaleX(1);
 }
-.gnb>li:first-child a {
+
+.gnb>li:first-child {
   padding-left: 0;
 }
 
 
-.gnb-more-btn{
+.gnb-more-btn {
   position: absolute;
   top: 28px;
   right: 0;
@@ -224,6 +227,7 @@ body {
   color: #111;
   line-height: 54px;
 }
+
 .gnb-more-btn::after {
   content: '';
   position: relative;
@@ -238,8 +242,85 @@ body {
   margin-right: 4px;
   vertical-align: 4px;
   transition: all 0.3s;
+}
+
+.submenu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  display: none;
+  width: 100vw;
+  padding: 22px 0 40px;
+  border-top: 1px solid #ddd;
+}
+
+.submenu-left {
+  width: 768px;
+  padding-right: 100px;
+  float: left;
+}
+
+.submenu-left-list {}
+
+.submenu-left-list>li {
+  display: block;
+  width: 33.3%;
+  float: left;
+}
+
+.submenu-left-list>li>a {
+  display: block;
+  padding: 16px 0;
+  font-size: 17px;
+  color: #111;
+  font-weight: 549;
+}
+
+.depth2 {}
+
+.depth2 li {}
+
+.depth2 li a {
+  display: block;
+  font-size: 15px;
+  color: #555;
+  padding: 10px 0;
+}
+
+.submenu-right {
+  width: 400px;
+  height: 100%;
+  padding: 22px 0 23px 70px;
+  margin-top: 10px;
+  float: left;
+  border-left: 1px solid #ddd;
+}
+
+.submenu-right>a {
+  padding: 8px 0;
+  display: block;
+  width: 270px;
+  font-size: 17px;
+  font-weight: 549;
+  margin-bottom: 15px;
 
 }
+
+.submenu-right-list {}
+
+.submenu-right-list li {}
+
+.submenu-right-list li a {
+  display: block;
+  padding: 8px 0;
+  width: 270px;
+  font-size: 15px;
+  color: #888;
+  
+}
+
+
 
 /* Visual */
 .visual {
