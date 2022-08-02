@@ -1,7 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url('../css/fonts.css');
 
 * {
   margin: 0;
@@ -70,7 +68,8 @@ body {
   width: 100%;
   padding: 30px 0;
 }
-.header-top-close{
+
+.header-top-close {
   display: none;
 }
 
@@ -180,9 +179,22 @@ body {
 
 .header-bottom-fix {
   position: fixed;
-  width: 100%;
+  width: 1200px;
   z-index: 9999;
+
+}
+
+.header-bottom-fix::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: block;
+  width: 100vw;
+  height: 54px;
   background: #fff;
+  z-index: -9;
 }
 
 .gnb {
@@ -257,7 +269,7 @@ body {
 .submenu {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0);
   top: 100%;
   display: none;
   width: 100vw;
@@ -423,14 +435,11 @@ body {
   cursor: pointer;
 }
 
-.sw-visual-control {
-  /* position: relative; */
-}
 
 .sw-visual-pg {
   position: absolute;
   left: 50%;
-  /* transform: translateX(-50%); */
+  transform: translateX(-50%);
   bottom: 20px;
   width: 100px;
   padding: 12px 20px;
@@ -443,8 +452,9 @@ body {
 
 .sw-visual-play {
   position: absolute;
-  bottom: 7%;
-  right: 46%;
+  bottom: 32px;
+  right: 50%;
+  transform: translateX(27px);
   width: 10px;
   height: 15px;
   background: url('../images/sp_common.png') no-repeat -164px -46px;
@@ -571,44 +581,172 @@ body {
 .order-arrow3 {
   background: #000000;
 }
+
 /* Benefit */
-.benefit{
+.benefit {
   position: relative;
   display: block;
-}
-.benefit .inner{
-  position: relative;
-  display: block;
+  background: #f6f6f6;
 }
 
+.benefit .inner {
+  position: relative;
+  display: block;
+  padding: 110px 0;
+}
+
+.benefit-box {
+  position: relative;
+  display: block;
+  width: 360px;
+  height: 100%;
+  float: left;
+}
+
+.benefit-box h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+.benefit-box h3 strong {
+  font-weight: 700;
+  display: block;
+  color: #238ece;
+}
+
+.benefit-box .benefit-btn {
+  width: 103px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 16px;
+  background: #222222;
+  border: 1px solid #222;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.sw-benefit {
+  position: relative;
+  display: block;
+  width: 756px;
+  height: 100%;
+  float: left;
+}
+
+.sw-benefit a {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 6px; */
+}
+
+.sw-benefit a img {
+  display: block;
+  width: 210px;
+  height: 210px;
+}
+
+.sw-benefit-prev {
+  position: absolute;
+  left: 26%;
+  top: 50%;
+  border-style: solid;
+  border-color: transparent #ccc #ccc transparent;
+  border-width: 0 1px 1px 0;
+  transform: translateY(-50%) rotate(135deg);
+  z-index: 9;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.sw-benefit-next {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  border-style: solid;
+  border-color: transparent #ccc #ccc transparent;
+  border-width: 0 1px 1px 0;
+  transform: translateY(-50%) rotate(-45deg);
+  z-index: 9;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background: transparent;
+  cursor: pointer;
+}
 /* Notice */
 .notice {
   position: relative;
   display: block;
+  padding: 80px 0;
 }
 
 .notice .inner {
   position: relative;
   display: block;
 }
-.sw-notice{
-  position: relative;
-  display: block;
-  width: 100%;
+
+.sw-notice {
+  width: 90%;
   height: 100%;
+  padding: 0 20px;
 }
-.sw-notice a{
+.sw-notice .swiper-slide{
   width: 324px;
   height: 401px;
 }
-.notice-1{
-  background: url('../images/notice1.jpg') no-repeat center;
+.sw-notice a {
+  position: relative;
+  display: block;
+  width: 324px;
+  height: 401px;
 }
-.notice-2{}
-.notice-3{}
-.notice-4{}
-.sw-notice-prev{}
-.sw-notice-next{}
+.sw-notice a img{
+  width: 324px;
+  height: 401px;
+}
+
+
+.sw-notice-prev {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  border-style: solid;
+  border-color: transparent #999 #999 transparent;
+  border-width: 0 1px 1px 0;
+  transform: translateY(-50%) rotate(135deg);
+  z-index: 9;
+  display: block;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.sw-notice-next {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  border-style: solid;
+  border-color: transparent #999 #999 transparent;
+  border-width: 0 1px 1px 0;
+  transform: translateY(-50%) rotate(-45deg);
+  z-index: 9;
+  display: block;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 /* Footer */
 .footer {
   position: relative;
