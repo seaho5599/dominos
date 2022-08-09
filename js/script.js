@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  // 배너닫기
+  $('.benner-close').click(function(){
+    $('.domino-benner').hide();
+  })
+  // 배너사라지기
+  $('.header-top-tip-box').delay(5000).fadeOut('slow');
 
   $(window).scroll(function(){
     
