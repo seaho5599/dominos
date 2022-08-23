@@ -5,6 +5,27 @@ $(document).ready(function () {
   })
   // 배너사라지기
   $('.header-top-tip-box').delay(5000).fadeOut('slow');
+  // 모바일메뉴
+  let mbMoreBtn = $('.mb-more-btn');
+  let mbMenu = $('.mb-menu');
+  let mbClose = $('.mb-close');
+  mbMoreBtn.click((e)=>{
+    e.preventDefault();
+    mbMenu.addClass('mb-menu-active');
+  })
+  mbClose.click(()=>{
+    mbMenu.removeClass('mb-menu-active');
+  })
+  $(window).resize(()=>{
+    let wW = window.innerWidth;
+    if(wW > 800){
+      mbMenu.hide();
+    }else{
+      mbMenu.removeClass('mb-menu-active');
+      mbMenu.show();
+    }
+  })
+
   let header = $('.header');
   let headerTop = $('.header-top')
   $(window).scroll(function () {
@@ -93,15 +114,12 @@ $(document).ready(function () {
     speed: 500
   })
 
-  // $(window).resize(function(){
-  //   let wW = window.innerWidth;
-  //   if(wW > 800){
-  //     swNotice;
-  //   }else{
-  //     swNotice.destroy();
-
-  //   }
-  // })
+  let mbFooterCenter = $('.mb-footer-center');
+  let mbFooterCenterBox = $('.mb-footer-centerbox');
+  mbFooterCenter.click((e)=>{
+    e.preventDefault();
+    mbFooterCenterBox.slideToggle();
+  })
 });
 
 window.onload = function () {
