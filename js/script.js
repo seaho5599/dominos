@@ -1,4 +1,25 @@
 $(document).ready(function () {
+  // gotop
+  let gotopBox = $('.gotop-box');
+  $(window).scroll(function(){
+    let temp = $(window).scrollTop();
+    let wW = window.innerWidth;
+    if(temp >= 96){
+      if(wW < 800){
+        gotopBox.css("display","block");
+        gotopBox.css("bottom","100px");
+      }else{
+        gotopBox.css("display","none");
+      }
+    }else if(temp < 96){
+      gotopBox.css("bottom","0");
+    }
+    gotopBox.click(function(){
+      $('html').stop().animate({
+        scrollTop : 0
+      }, 1000)
+    })
+  })
   // 배너닫기
   $('.benner-close').click(function () {
     $('.domino-benner').hide();

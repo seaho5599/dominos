@@ -70,388 +70,405 @@
 
 <body>
   <div class="wrap">
-    <!-- 배너 -->
-    <div class="domino-benner">
-      <img src="images/banner-floating_200827.png" alt="" class="domino-b">
-      <button class="benner-close">닫기</button>
-    </div>
-    <!--모바일 퀵 메뉴  -->
-    <div class="mb-quick">
-      <div class="inner">
-        <div class="mb-quick-gnb">
-          <ul class="mb-quick-gnb-depth">
-            <li>
-              <a href="#">
-                <i><img src="images/mb-gnb1.png" alt=""></i>
-                <p>매장검색</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i><img src="images/mb-gnb2.png" alt=""></i>
-                <p>주문내역</p>
-              </a>
-            </li>
-            <li>
-              <div class="quick">
-                <a href="#">
-                  <i><img src="images/ico-quick.png" alt=""></i>
-                  <p>퀵오더</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <a href="#">
-                <i><img src="images/mb-gnb4.png" alt=""></i>
-                <p>나의 정보</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="mb-more-btn">
-                <i><img src="images/mb-gnb3.png" alt=""></i>
-                <p>더보기</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <h1>도미노피자 클론코딩</h1>
+        <p>
+          이 사이트는 <b>스터디용</b>으로 제작되었으며 리소스는 <strong>원저작자</strong>에게 있습니다. <br>
+          해당 사이트 관련 문제 사항이 있으시면 연락해주시면 삭제하겠습니다.<br>
+          본 사이트는 Chrome 에 최적화되어 있습니다.
+        </p>
+    
+        <button class="modal-close"><i class="fas fa-times"></i></button>
       </div>
     </div>
-    <!-- 모바일 더보기 메뉴  -->
-    <div class="mb-menu">
-      <div class="mb-menu-top">
-        <div class="mb-info">
-          <a href="#">로그인</a>
-          <a href="#">회원가입</a>
-        </div>
-        <button class="mb-close"></button>
-      </div>
-      <div class="mb-menu-txt">
-        <div class="mb-menu-gnb">
-          <ul class="mb-menu-depth">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">매니아 혜택</a></li>
-            <li><a href="#">도미노 모멘트</a></li>
-            <li><a href="#">단체주문 서비스</a></li>
-            <li><a href="#">자주하는 질문</a></li>
-            <li><a href="#">문의하기</a></li>
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">가맹점 모집</a></li>
-            <li><a href="#">인재채용</a></li>
-            <li class="mb-menu-notice">
-              <a href="#">공지사항</a>
-              <p>
-                <a href="#">SSG vs 롯데 프로야구 추첨 이벤트 당첨자 안내</a>
-                <a href="#">개인정보처리방침 개정 고지 (2022년 8월 22일 적용)</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-          <ul class="mb-menu-sns">
-            <li><a href="#" class="mb-bg"></a></li>
-            <li><a href="#" class="mb-is"></a></li>
-            <li><a href="#" class="mb-fb"></a></li>
-            <li><a href="#" class="mb-yt"></a></li>
-            <li><a href="#" class="mb-tw"></a></li>
-          </ul>
-        
-      </div>
+    <!-- gotop -->
+    <div class="gotop-box">
+      <button class="gotop"></button>
     </div>
-    <!-- Header -->
-    <header class="header">
-      <div class="inner">
-        <div class="header-top">
-          <a href="#" class="logo"></a>
-          <a href="#" class="header-top-place">중구 동인동2가 21</a>
-          <div class="header-top-tip-box">
-            주변 매장의 프로모션을 확인해보세요!
-          </div>
-          <a htef="#" class="mb-header-top-place">DOMINO'S</a>
-          <div class="header-top-sign">
-            <ul class="sign-box clearfix">
-              <li>
-                <a href="#">로그인</a>
-              </li>
-              <li>
-                <a href="#">회원가입</a>
-              </li>
-              <li class="sign-box-lang">
-                <select class="lang-box-lang">
-                  <option value="">KOR</option>
-                  <option value="">ENG</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="header-bottom">
-          <ul class="gnb">
-            <li><a href="#">메뉴</a></li>
-            <li><a href="#">e-쿠폰</a></li>
-            <li><a href="#">상품권 선물 </a></li>
-            <li><a href="#">이벤트·제휴</a></li>
-            <li><a href="#">매장검색</a></li>
-            <li><a href="#">가맹점모집</a></li>
-          </ul>
-          <a href="#" class="gnb-more-btn">더보기</a>
-          <div class="submenu clearfix">
-            <div class="inner">
-              <div class="submenu-left">
-                <ul class="submenu-left-list clearfix">
-                  <li>
-                    <a href="#">도미노 서비스</a>
-                    <ul class="depth2">
-                      <li><a href="#">매니아 혜택</a></li>
-                      <li><a href="#">도미노 모멘트</a></li>
-                      <li><a href="#">퀵오더</a></li>
-                      <li><a href="#">단체주문 서비스</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">고객센터</a>
-                    <ul class="depth2">
-                      <li><a href="#">자주하는 질문</a></li>
-                      <li><a href="#">문의하기</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">회사소개</a>
-                    <ul class="depth2">
-                      <li><a href="#">한국도미노피자</a></li>
-                      <li><a href="#">광고갤러리</a></li>
-                      <li><a href="#">사회공헌활동</a></li>
-                      <li><a href="#">가맹점 모집</a></li>
-                      <li><a href="#">인재채용</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="submenu-right">
-                <a href="#">공지사항</a>
-                <ul class="submenu-right-list">
-                  <li><a href="#">-도미노뉴스</a></li>
-                  <li><a href="#">-보도자료</a></li>
-                </ul>
-              </div>
+  </div>
+  <!-- 배너 -->
+  <div class="domino-benner">
+    <img src="images/banner-floating_200827.png" alt="" class="domino-b">
+    <button class="benner-close">닫기</button>
+  </div>
+  <!--모바일 퀵 메뉴  -->
+  <div class="mb-quick">
+    <div class="inner">
+      <div class="mb-quick-gnb">
+        <ul class="mb-quick-gnb-depth">
+          <li>
+            <a href="#">
+              <i><img src="images/mb-gnb1.png" alt=""></i>
+              <p>매장검색</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i><img src="images/mb-gnb2.png" alt=""></i>
+              <p>주문내역</p>
+            </a>
+          </li>
+          <li>
+            <div class="quick">
+              <a href="#">
+                <i><img src="images/ico-quick.png" alt=""></i>
+                <p>퀵오더</p>
+              </a>
             </div>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a href="#">
+              <i><img src="images/mb-gnb4.png" alt=""></i>
+              <p>나의 정보</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mb-more-btn">
+              <i><img src="images/mb-gnb3.png" alt=""></i>
+              <p>더보기</p>
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <!-- Visual -->
-    <section class="visual">
-      <div class="swiper-container sw-visual">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="#" class="visual-1"></a></div>
-          <div class="swiper-slide"><a href="#" class="visual-2"></a></div>
-          <div class="swiper-slide"><a href="#" class="visual-3"></a></div>
-          <div class="swiper-slide"><a href="#" class="visual-4"></a></div>
-          <div class="swiper-slide"><a href="#" class="visual-5"></a></div>
-          <div class="swiper-slide"><a href="#" class="visual-6"></a></div>
-          <div class="swiper-slide"><a href="#" class="visual-7"></a></div>
-        </div>
-        <div class="sw-visual-control">
-          <div class="sw-visual-pg"></div>
-          <button class="sw-visual-prev">왼</button>
-          <button class="sw-visual-next">오</button>
-          <button class="sw-visual-play">플</button>
-        </div>
+    </div>
+  </div>
+  <!-- 모바일 더보기 메뉴  -->
+  <div class="mb-menu">
+    <div class="mb-menu-top">
+      <div class="mb-info">
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
       </div>
-    </section>
-    <!-- Order -->
-    <section class="order">
-      <div class="inner">
-        <div class="order-box">
-          <a href="#">
-            <i class="order-icon1"></i>
-            <h3 class="order-box-title1">배달 주문</h3>
-            <p class="order-arrow1"></p>
-            <span>등급별 최대 30%</span>
-          </a>
-        </div>
-        <div class="order-box">
-          <a href="#">
-            <i class="order-icon2"></i>
-            <h3 class="order-box-title2">포장 주문</h3>
-            <p class="order-arrow2"></p>
-            <span>등급별 최대 40%</span>
-          </a>
-        </div>
-        <div class="order-box">
-          <a href="#">
-            <i class="order-icon3"></i>
-            <h3 class="order-box-title3">퀵오더</h3>
-            <p class="order-arrow3"></p>
-            <span>자주 이용하는 메뉴를<br> 더 빠르게 주문해보세요!</span>
-          </a>
-        </div>
+      <button class="mb-close"></button>
+    </div>
+    <div class="mb-menu-txt">
+      <div class="mb-menu-gnb">
+        <ul class="mb-menu-depth">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">매니아 혜택</a></li>
+          <li><a href="#">도미노 모멘트</a></li>
+          <li><a href="#">단체주문 서비스</a></li>
+          <li><a href="#">자주하는 질문</a></li>
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">가맹점 모집</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li class="mb-menu-notice">
+            <a href="#">공지사항</a>
+            <p>
+              <a href="#">SSG vs 롯데 프로야구 추첨 이벤트 당첨자 안내</a>
+              <a href="#">개인정보처리방침 개정 고지 (2022년 8월 22일 적용)</a>
+            </p>
+          </li>
+        </ul>
       </div>
-    </section>
-    <!-- Benefit -->
-    <section class="benefit">
-      <div class="inner clearfix">
-        <div class="benefit-box">
-          <h3>
-            도미노피자의
-            <strong>특별한매니아 혜택</strong>
-            누려보세요!
-          </h3>
-          <button class="benefit-btn">로그인</button>
+      <ul class="mb-menu-sns">
+        <li><a href="#" class="mb-bg"></a></li>
+        <li><a href="#" class="mb-is"></a></li>
+        <li><a href="#" class="mb-fb"></a></li>
+        <li><a href="#" class="mb-yt"></a></li>
+        <li><a href="#" class="mb-tw"></a></li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="inner">
+      <div class="header-top">
+        <a href="#" class="logo"></a>
+        <a href="#" class="header-top-place">중구 동인동2가 21</a>
+        <div class="header-top-tip-box">
+          주변 매장의 프로모션을 확인해보세요!
         </div>
-        <div class="mb-benefit-box">
-          <h3>
-            도미노피자 매니아만의
-            <strong>놀라운 혜택을 누려보세요</strong>
-          </h3>
-          <button class="benefit-btn">로그인</button>
-        </div>
-        <div class="swiper-container sw-benefit">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#"><img src="images/benefit1.png" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img
-                  src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card2.gif" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="images/benefit3.png" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="images/benefit4.png" alt=""></a></div>
-          </div>
-        </div>
-        <button class="sw-benefit-prev">왼</button>
-        <button class="sw-benefit-next">우</button>
-      </div>
-    </section>
-    <!-- Notice -->
-    <section class="notice">
-      <div class="inner">
-        <div class="swiper-container sw-notice">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#" class="notice-1"><img src="images/notice1.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href="#" class="notice-2"><img src="images/notice2.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href="#" class="notice-3"><img src="images/notice3.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href="#" class="notice-4"><img src="images/notice4.jpg" alt=""></a></div>
-          </div>
-        </div>
-        <bottom class="sw-notice-prev"></bottom>
-        <bottom class="sw-notice-next"></bottom>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <hr class="f-line">
-      <div class="inner">
-        <div class="footer-top clearfix">
-          <div class="footer-top-left">
-            <p class="footer-logo"></p>
-            <span class="footer-number">1577-3082</span>
-            <ul class="footer-contact clearfix">
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#"><strong>개인정보처리방침</strong></a></li>
-              <li><a href="#">위치기반서비스</a></li>
-              <li><a href="#">청소년보호방침</a></li>
-              <br class="mb-br">
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">인재채용</a></li>
-              <li><a href="#">가맹점모집</a></li>
-              <li><a href="#">단체주문</a></li>
-            </ul>
-          </div>
-          <div class="footer-top-right">
-            <div class="footer-top-langbox">
-              <select class="footer-top-lang">
+        <a htef="#" class="mb-header-top-place">DOMINO'S</a>
+        <div class="header-top-sign">
+          <ul class="sign-box clearfix">
+            <li>
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li class="sign-box-lang">
+              <select class="lang-box-lang">
                 <option value="">KOR</option>
                 <option value="">ENG</option>
               </select>
-            </div>
-            <div class="app-box">
-              <span class="app">DOWNLOAD APP</span>
-              <i class="apple"></i>
-              <i class="android"></i>
-            </div>
-          </div>
-        </div>
-        <div class="footer-center">
-          <a href="#" class="mb-footer-center">청오디피케이(주) 사업자 정보</a>
-          <div class="mb-footer-centerbox">
-            <p>06223 서울특별시 강남구 역삼로25길 35(역삼동, 청오큐브타워) 청오디피케이㈜｜대표이사 : 오광현,김영훈</p>
-            <p>등록번호: 220-81-03371｜통신판매업신고: 강남 5064호｜개인정보 보호책임자 : 이명윤</p>
-            <p>문의 : webmaster@dominos.co.kr</p>
-            <p>Copyright ⓒ Domino’s Pizza. All rights reserved.</p>
-            <div class="f-center-footer">
-              <p>청오디피케이㈜의 사전 서면동의 없이 도미노피자 사이트(PC, 모바일, 앱)의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.
-              </p>
-              <div class="sns">
-                <ul class="sns-list">
-                  <li><a href="#"><i class="blog"></i></a></li>
-                  <li><a href="#"><i class="instagram"></i></a></li>
-                  <li><a href="#"><i class="facebook"></i></a></li>
-                  <li><a href="#"><i class="youtube"></i></a></li>
-                  <li><a href="#"><i class="twiter"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <p class="mb-copy">Copyright ⓒ Domino’s Pizza. All rights reserved.</p>
-        </div>
-
-      </div>
-      <div class="footer-bottom">
-        <div class="inner">
-          <ul>
-            <li>
-              <i class="f-b-icon1">1</i>
-              <p>
-                식품안전
-                <br>
-                경영시스템 인증
-              </p>
-            </li>
-            <li>
-              <i class="f-b-icon2">2</i>
-              <p>
-                지식경제부
-                <br>
-                우수디자인 선정
-              </p>
-            </li>
-            <li>
-              <i class="f-b-icon3">3</i>
-              <p>
-                2021년 고객이 가장 추천하는 기업
-                <br>
-                피자전문점 부문 9년 연속 1위
-              </p>
-            </li>
-            <li>
-              <i class="f-b-icon4">4</i>
-              <p>
-                2021년 한국산업 고객만족도
-                <br>
-                피자전문점 부문 7년 연속 1위
-              </p>
-            </li>
-            <li>
-              <i class="f-b-icon5">5</i>
-              <p>
-                2021 프리미엄브랜드지수
-                <br>
-                피자전문점 부문 6년 연속 1위 수상
-              </p>
-            </li>
-            <li>
-              <i class="f-b-icon6">6</i>
-              <p>
-                대학생 1000명이 선택한
-                <br>
-                2019 올해의 핫 브랜드 캠퍼스 잡앤조이 선정
-              </p>
             </li>
           </ul>
         </div>
       </div>
-    </footer>
-    <div class="mb-footer-app">
-      <ul class="mb-appbox">
-        <li><a href="#">도미노피자 앱 다운로드</a></li>
-        <li><a href="#">마이키친 앱 다운로드</a></li>
-      </ul>
+      <div class="header-bottom">
+        <ul class="gnb">
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">e-쿠폰</a></li>
+          <li><a href="#">상품권 선물 </a></li>
+          <li><a href="#">이벤트·제휴</a></li>
+          <li><a href="#">매장검색</a></li>
+          <li><a href="#">가맹점모집</a></li>
+        </ul>
+        <a href="#" class="gnb-more-btn">더보기</a>
+        <div class="submenu clearfix">
+          <div class="inner">
+            <div class="submenu-left">
+              <ul class="submenu-left-list clearfix">
+                <li>
+                  <a href="#">도미노 서비스</a>
+                  <ul class="depth2">
+                    <li><a href="#">매니아 혜택</a></li>
+                    <li><a href="#">도미노 모멘트</a></li>
+                    <li><a href="#">퀵오더</a></li>
+                    <li><a href="#">단체주문 서비스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                  <ul class="depth2">
+                    <li><a href="#">자주하는 질문</a></li>
+                    <li><a href="#">문의하기</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">회사소개</a>
+                  <ul class="depth2">
+                    <li><a href="#">한국도미노피자</a></li>
+                    <li><a href="#">광고갤러리</a></li>
+                    <li><a href="#">사회공헌활동</a></li>
+                    <li><a href="#">가맹점 모집</a></li>
+                    <li><a href="#">인재채용</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="submenu-right">
+              <a href="#">공지사항</a>
+              <ul class="submenu-right-list">
+                <li><a href="#">-도미노뉴스</a></li>
+                <li><a href="#">-보도자료</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </header>
+  <!-- Visual -->
+  <section class="visual">
+    <div class="swiper-container sw-visual">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#" class="visual-1"></a></div>
+        <div class="swiper-slide"><a href="#" class="visual-2"></a></div>
+        <div class="swiper-slide"><a href="#" class="visual-3"></a></div>
+        <div class="swiper-slide"><a href="#" class="visual-4"></a></div>
+        <div class="swiper-slide"><a href="#" class="visual-5"></a></div>
+        <div class="swiper-slide"><a href="#" class="visual-6"></a></div>
+        <div class="swiper-slide"><a href="#" class="visual-7"></a></div>
+      </div>
+      <div class="sw-visual-control">
+        <div class="sw-visual-pg"></div>
+        <button class="sw-visual-prev">왼</button>
+        <button class="sw-visual-next">오</button>
+        <button class="sw-visual-play">플</button>
+      </div>
+    </div>
+  </section>
+  <!-- Order -->
+  <section class="order">
+    <div class="inner">
+      <div class="order-box">
+        <a href="#">
+          <i class="order-icon1"></i>
+          <h3 class="order-box-title1">배달 주문</h3>
+          <p class="order-arrow1"></p>
+          <span>등급별 최대 30%</span>
+        </a>
+      </div>
+      <div class="order-box">
+        <a href="#">
+          <i class="order-icon2"></i>
+          <h3 class="order-box-title2">포장 주문</h3>
+          <p class="order-arrow2"></p>
+          <span>등급별 최대 40%</span>
+        </a>
+      </div>
+      <div class="order-box">
+        <a href="#">
+          <i class="order-icon3"></i>
+          <h3 class="order-box-title3">퀵오더</h3>
+          <p class="order-arrow3"></p>
+          <span>자주 이용하는 메뉴를<br> 더 빠르게 주문해보세요!</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Benefit -->
+  <section class="benefit">
+    <div class="inner clearfix">
+      <div class="benefit-box">
+        <h3>
+          도미노피자의
+          <strong>특별한매니아 혜택</strong>
+          누려보세요!
+        </h3>
+        <button class="benefit-btn">로그인</button>
+      </div>
+      <div class="mb-benefit-box">
+        <h3>
+          도미노피자 매니아만의
+          <strong>놀라운 혜택을 누려보세요</strong>
+        </h3>
+        <button class="benefit-btn">로그인</button>
+      </div>
+      <div class="swiper-container sw-benefit">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="images/benefit1.png" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img
+                src="https://cdn.dominos.co.kr/domino/pc/images/main/main_card2.gif" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="images/benefit3.png" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="images/benefit4.png" alt=""></a></div>
+        </div>
+      </div>
+      <button class="sw-benefit-prev">왼</button>
+      <button class="sw-benefit-next">우</button>
+    </div>
+  </section>
+  <!-- Notice -->
+  <section class="notice">
+    <div class="inner">
+      <div class="swiper-container sw-notice">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#" class="notice-1"><img src="images/notice1.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#" class="notice-2"><img src="images/notice2.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#" class="notice-3"><img src="images/notice3.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#" class="notice-4"><img src="images/notice4.jpg" alt=""></a></div>
+        </div>
+      </div>
+      <bottom class="sw-notice-prev"></bottom>
+      <bottom class="sw-notice-next"></bottom>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <hr class="f-line">
+    <div class="inner">
+      <div class="footer-top clearfix">
+        <div class="footer-top-left">
+          <p class="footer-logo"></p>
+          <span class="footer-number">1577-3082</span>
+          <ul class="footer-contact clearfix">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="#">위치기반서비스</a></li>
+            <li><a href="#">청소년보호방침</a></li>
+            <br class="mb-br">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">가맹점모집</a></li>
+            <li><a href="#">단체주문</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-right">
+          <div class="footer-top-langbox">
+            <select class="footer-top-lang">
+              <option value="">KOR</option>
+              <option value="">ENG</option>
+            </select>
+          </div>
+          <div class="app-box">
+            <span class="app">DOWNLOAD APP</span>
+            <i class="apple"></i>
+            <i class="android"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-center">
+        <a href="#" class="mb-footer-center">청오디피케이(주) 사업자 정보</a>
+        <div class="mb-footer-centerbox">
+          <p>06223 서울특별시 강남구 역삼로25길 35(역삼동, 청오큐브타워) 청오디피케이㈜｜대표이사 : 오광현,김영훈</p>
+          <p>등록번호: 220-81-03371｜통신판매업신고: 강남 5064호｜개인정보 보호책임자 : 이명윤</p>
+          <p>문의 : webmaster@dominos.co.kr</p>
+          <p>Copyright ⓒ Domino’s Pizza. All rights reserved.</p>
+          <div class="f-center-footer">
+            <p>청오디피케이㈜의 사전 서면동의 없이 도미노피자 사이트(PC, 모바일, 앱)의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.
+            </p>
+            <div class="sns">
+              <ul class="sns-list">
+                <li><a href="#"><i class="blog"></i></a></li>
+                <li><a href="#"><i class="instagram"></i></a></li>
+                <li><a href="#"><i class="facebook"></i></a></li>
+                <li><a href="#"><i class="youtube"></i></a></li>
+                <li><a href="#"><i class="twiter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="mb-copy">Copyright ⓒ Domino’s Pizza. All rights reserved.</p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="inner">
+        <ul>
+          <li>
+            <i class="f-b-icon1">1</i>
+            <p>
+              식품안전
+              <br>
+              경영시스템 인증
+            </p>
+          </li>
+          <li>
+            <i class="f-b-icon2">2</i>
+            <p>
+              지식경제부
+              <br>
+              우수디자인 선정
+            </p>
+          </li>
+          <li>
+            <i class="f-b-icon3">3</i>
+            <p>
+              2021년 고객이 가장 추천하는 기업
+              <br>
+              피자전문점 부문 9년 연속 1위
+            </p>
+          </li>
+          <li>
+            <i class="f-b-icon4">4</i>
+            <p>
+              2021년 한국산업 고객만족도
+              <br>
+              피자전문점 부문 7년 연속 1위
+            </p>
+          </li>
+          <li>
+            <i class="f-b-icon5">5</i>
+            <p>
+              2021 프리미엄브랜드지수
+              <br>
+              피자전문점 부문 6년 연속 1위 수상
+            </p>
+          </li>
+          <li>
+            <i class="f-b-icon6">6</i>
+            <p>
+              대학생 1000명이 선택한
+              <br>
+              2019 올해의 핫 브랜드 캠퍼스 잡앤조이 선정
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="mb-footer-app">
+    <ul class="mb-appbox">
+      <li><a href="#">도미노피자 앱 다운로드</a></li>
+      <li><a href="#">마이키친 앱 다운로드</a></li>
+    </ul>
+  </div>
   </div>
 </body>
 
