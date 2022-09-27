@@ -111,14 +111,14 @@ body {
   height: 3px;
   background: #333;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .modal-main span {
   font-size: 16px;
   font-weight: 400;
   color: #333;
   line-height: 1.8;
-  padding: 10px;
+  padding: 5px 10px;
   letter-spacing: 0.5px;
 }
 .modal-close {
@@ -175,7 +175,7 @@ body {
   position: fixed;
   top: 195px;
   right: 180px;
-  z-index: 99999;
+  z-index: 9999;
   animation: benner-img 1s infinite;
 }
 
@@ -710,7 +710,7 @@ body {
   width: 100vw;
   padding: 22px 0 40px;
   border-top: 1px solid #ddd;
-  z-index: 999;
+  z-index: 99;
   background-color: #fff;
 }
 
